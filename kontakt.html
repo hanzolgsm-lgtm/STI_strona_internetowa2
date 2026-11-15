@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description" content="Skontaktuj się z EVELORA i umów bezpłatny audyt czystości." />
+  <title>Kontakt — EVELORA</title>
+  <link rel="icon" type="image/jpeg" href="assets/sti-logo.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#top" aria-label="EVELORA — strona główna"><img src="assets/sti-logo.jpeg" alt="Logo EVELORA" /></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html#services" data-i18n="navServices">Usługi</a>
+      <a href="index.html#about" data-i18n="navAbout">O nas</a>
+      <a href="index.html#impact" data-i18n="navImpact">Nasza misja</a>
+      <a href="index.html#values" data-i18n="navValues">Nasze wartości</a>
+      <a href="#contact" data-i18n="navContact">Kontakt</a>
+      <a href="kariera.html" data-i18n="navCareers">Kariera</a>
+    </nav>
+    <div class="header-actions">
+      <label class="sr-only" for="language" data-i18n="languageLabel">Wybierz język</label>
+      <select id="language" class="language-select" aria-label="Language">
+        <option value="pl">PL</option><option value="de">DE</option><option value="en">EN</option>
+      </select>
+      <label class="sr-only" for="textSize" data-i18n="textSizeLabel">Rozmiar tekstu</label>
+      <select id="textSize" class="language-select text-size-select">
+        <option value="small" data-i18n="textSizeSmall">Mniejszy</option>
+        <option value="medium" data-i18n="textSizeMedium">Średni</option>
+        <option value="large" data-i18n="textSizeLarge">Większy</option>
+      </select>
+      <a class="header-cta" href="#contact" data-i18n="navCta">Porozmawiajmy</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="standard-shortcut-nav section-wrap" aria-label="Nasze standardy">
+    <div class="standard-shortcut-grid">
+      <article class="standard-item"><a class="standard-link" href="standard.html?topic=clean"><img src="assets/czystoscPL.jpeg" data-standard-image="czystosc" alt="" /><span class="sr-only" data-i18n="standardClean">Czystość</span></a></article>
+      <article class="standard-item"><a class="standard-link" href="standard.html?topic=safety"><img src="assets/bazpieczenstwoPL.jpeg" data-standard-image="bazpieczenstwo" alt="" /><span class="sr-only" data-i18n="standardSafety">Bezpieczeństwo</span></a></article>
+      <article class="standard-item"><a class="standard-link" href="standard.html?topic=quality"><img src="assets/jakoscPL.jpeg" data-standard-image="jakosc" alt="" /><span class="sr-only" data-i18n="standardQuality">Jakość</span></a></article>
+      <article class="standard-item"><a class="standard-link" href="standard.html?topic=ecology"><img src="assets/ekologiaPL.jpeg" data-standard-image="ekologia" alt="" /><span class="sr-only" data-i18n="standardEcology">Ekologia</span></a></article>
+      <article class="standard-item"><a class="standard-link" href="standard.html?topic=on-time"><img src="assets/terminowoPL.jpeg" data-standard-image="terminowo" alt="" /><span class="sr-only" data-i18n="standardOnTime">Terminowość</span></a></article>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="contact section-wrap" id="contact">
+      <div class="contact-panel">
+        <div class="contact-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="contactEyebrow">SKONTAKTUJ SIĘ Z NAMI</span></div>
+          <h1 data-i18n-html="contactTitle">Umówmy się na<br /><em>bezpłatny audyt.</em></h1>
+          <p data-i18n="contactText">Umówmy się na bezpłatny audyt czystości Państwa obiektu i sprawdźmy, jak możemy wesprzeć Wasz biznes.</p>
+          <div class="contact-detail"><span class="detail-label" data-i18n="contactGermanyLabel">ODDZIAŁ NIEMCY</span><a href="tel:+491792226550">Tomasz Świerczek · 0491792226550</a></div>
+          <div class="contact-detail"><span class="detail-label" data-i18n="contactPolandLabel">ODDZIAŁ POLSKA – REKRUTACJA</span><a href="tel:+48600872066">Sebastian Hanslik · +48 600 872 066</a></div>
+          <div class="contact-detail"><a href="tel:+48534961540">Igor Świerczek · +48 534 961 540</a></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="name" data-i18n="formName">Imię i nazwisko</label>
+          <input id="name" name="name" autocomplete="name" required placeholder=" " />
+          <label for="email" data-i18n="formEmail">Adres e-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder=" " />
+          <label for="phone" data-i18n="formPhone">Numer telefonu</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder=" " />
+          <label for="service" data-i18n="formService">Czego dotyczy zapytanie?</label>
+          <select id="service" name="service">
+            <option value="clean" data-i18n="formClean">Sprzątanie przemysłowe</option>
+            <option value="electric" data-i18n="formElectric">Instalacje elektryczne</option>
+            <option value="other" data-i18n="formOther">Inne / współpraca</option>
+            <option value="job-poland" data-i18n="formJobPoland">Jestem z Polski i szukam pracy</option>
+            <option value="job-germany" data-i18n="formJobGermany">Jestem z Niemiec i szukam pracy</option>
+          </select>
+          <label for="message" data-i18n="formMessage">Wiadomość</label>
+          <textarea id="message" name="message" rows="3" required></textarea>
+          <button class="btn btn-primary form-submit" type="submit"><span data-i18n="formSubmit">Przygotuj zapytanie</span><b>↗</b></button>
+          <p class="form-note" id="formNote" data-i18n="formNote" role="status" aria-live="polite">Formularz demonstracyjny — przed publikacją należy podłączyć firmowy adres e-mail lub system obsługi zapytań.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer section-wrap">
+    <a class="footer-brand" href="index.html#top"><img src="assets/sti-logo.jpeg" alt="EVELORA" /></a>
+    <p data-i18n="footerClaim">Solidne wsparcie dla przemysłu. Odpowiedzialnie.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> EVELORA. <span data-i18n="rights">Wszelkie prawa zastrzeżone.</span></span><a href="index.html#top" data-i18n="backTop">Wróć na górę ↑</a><span>PL / DE / EN</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

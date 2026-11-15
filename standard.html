@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description" content="Standardy EVELORA: czystość, bezpieczeństwo, jakość, ekologia i terminowość." />
+  <title>Nasze standardy — EVELORA</title>
+  <link rel="icon" type="image/jpeg" href="assets/sti-logo.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="standard-detail-page">
+  <main class="standard-detail section-wrap">
+    <div class="standard-detail-topbar">
+      <a class="standard-detail-brand" href="index.html#top" aria-label="EVELORA — strona główna"><img src="assets/sti-logo.jpeg" alt="EVELORA" /></a>
+      <nav class="standard-detail-nav" aria-label="Main navigation">
+        <a class="standard-detail-back" id="detailBack" href="index.html#top">← Powrót do strony głównej</a>
+        <a id="detailContact" href="kontakt.html">Kontakt</a>
+        <a id="detailCareers" href="kariera.html">Kariera</a>
+      </nav>
+      <label class="sr-only" for="detailLanguage" id="detailLanguageLabel">Wybierz język</label>
+      <select class="language-select" id="detailLanguage" aria-labelledby="detailLanguageLabel">
+        <option value="pl">PL</option>
+        <option value="de">DE</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+    <nav class="standard-shortcut-nav" id="standardShortcutNav" aria-label="Nasze standardy">
+      <div class="standard-shortcut-grid">
+        <article class="standard-item"><a class="standard-link" href="standard.html?topic=clean"><img src="assets/czystoscPL.jpeg" data-standard-image="czystosc" alt="" /><span class="sr-only" data-standard-label="clean">Czystość</span></a></article>
+        <article class="standard-item"><a class="standard-link" href="standard.html?topic=safety"><img src="assets/bazpieczenstwoPL.jpeg" data-standard-image="bazpieczenstwo" alt="" /><span class="sr-only" data-standard-label="safety">Bezpieczeństwo</span></a></article>
+        <article class="standard-item"><a class="standard-link" href="standard.html?topic=quality"><img src="assets/jakoscPL.jpeg" data-standard-image="jakosc" alt="" /><span class="sr-only" data-standard-label="quality">Jakość</span></a></article>
+        <article class="standard-item"><a class="standard-link" href="standard.html?topic=ecology"><img src="assets/ekologiaPL.jpeg" data-standard-image="ekologia" alt="" /><span class="sr-only" data-standard-label="ecology">Ekologia</span></a></article>
+        <article class="standard-item"><a class="standard-link" href="standard.html?topic=on-time"><img src="assets/terminowoPL.jpeg" data-standard-image="terminowo" alt="" /><span class="sr-only" data-standard-label="onTime">Terminowość</span></a></article>
+      </div>
+    </nav>
+    <header class="standard-detail-heading">
+      <div class="eyebrow"><span class="eyebrow-line"></span><span id="detailEyebrow">NASZE STANDARDY</span></div>
+      <h1 id="detailTitle"></h1>
+      <p class="standard-detail-lead"><em id="detailTagline"></em></p>
+    </header>
+    <div class="standard-detail-content">
+      <p class="standard-detail-intro"><strong id="detailIntroLead"></strong> <span id="detailIntroRest"></span></p>
+      <div id="detailSections"></div>
+      <p class="standard-detail-closing" id="detailClosing"></p>
+    </div>
+  </main>
+  <script src="standard.js"></script>
+</body>
+</html>

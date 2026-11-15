@@ -11,11 +11,15 @@ STRUKTURA
 - index.html — treść i układ strony
 - styles.css — wygląd i responsywność
 - script.js — tłumaczenia, automatyczny wybór języka i interakcje
+- standard.html i standard.js — szczegółowe, wielojęzyczne opisy standardów
+- kontakt.html — osobna strona kontaktowa z formularzem
+- kariera.html — pusta podstrona kariery do uzupełnienia
 - assets/sti-logo.jpeg — logo EVELORA
 
 PRZED PUBLIKACJĄ
 - Dodać firmowy adres e-mail.
-- Podłączyć formularz do firmowej skrzynki, CRM lub backendu (obecnie jest demonstracyjny i nie wysyła wiadomości). Numery telefonów oddziałów i rekrutacji są już podane na stronie.
+- Formularz otwiera WhatsApp z uzupełnioną wiadomością, którą użytkownik wysyła ręcznie. Przed publikacją zweryfikować numery WhatsApp i dane firmy.
+- Formularz kariery wysyła plik CV do `/api/candidates`; endpoint serwerowy musi być wdrożony i walidować typ oraz rozmiar pliku.
 - Dodać prawdziwe dane firmy, politykę prywatności i informacje wymagane prawem.
 - Zweryfikować, czy opis usług odpowiada faktycznym uprawnieniom, zakresowi i standardom realizacji.
 - Rozważyć zastąpienie zewnętrznych fontów lokalnymi, jeśli strona ma działać bez połączenia z internetem.

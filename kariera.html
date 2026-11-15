@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000" />
+  <title>Kariera — EVELORA</title>
+  <link rel="icon" type="image/jpeg" href="assets/sti-logo.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#top" aria-label="EVELORA — strona główna"><img src="assets/sti-logo.jpeg" alt="Logo EVELORA" /></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html#services" data-i18n="navServices">Usługi</a>
+      <a href="index.html#about" data-i18n="navAbout">O nas</a>
+      <a href="index.html#impact" data-i18n="navImpact">Nasza misja</a>
+      <a href="index.html#values" data-i18n="navValues">Nasze wartości</a>
+      <a href="kontakt.html" data-i18n="navContact">Kontakt</a>
+      <a href="#kariera" data-i18n="navCareers">Kariera</a>
+    </nav>
+    <div class="header-actions">
+      <label class="sr-only" for="language" data-i18n="languageLabel">Wybierz język</label>
+      <select id="language" class="language-select" aria-label="Language">
+        <option value="pl">PL</option><option value="de">DE</option><option value="en">EN</option>
+      </select>
+      <label class="sr-only" for="textSize" data-i18n="textSizeLabel">Rozmiar tekstu</label>
+      <select id="textSize" class="language-select text-size-select">
+        <option value="small" data-i18n="textSizeSmall">Mniejszy</option>
+        <option value="medium" data-i18n="textSizeMedium">Średni</option>
+        <option value="large" data-i18n="textSizeLarge">Większy</option>
+      </select>
+      <a class="header-cta" href="kontakt.html" data-i18n="navCta">Porozmawiajmy</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="standard-shortcut-nav section-wrap" aria-label="Nasze standardy">
+    <div class="standard-shortcut-grid">
+      <article class="standard-item"><a class="standard-link" href="standard.html?topic=clean"><img src="assets/czystoscPL.jpeg" data-standard-image="czystosc" alt="" /><span class="sr-only" data-i18n="standardClean">Czystość</span></a></article>
+      <article class="standard-item"><a class="standard-link" href="standard.html?topic=safety"><img src="assets/bazpieczenstwoPL.jpeg" data-standard-image="bazpieczenstwo" alt="" /><span class="sr-only" data-i18n="standardSafety">Bezpieczeństwo</span></a></article>
+      <article class="standard-item"><a class="standard-link" href="standard.html?topic=quality"><img src="assets/jakoscPL.jpeg" data-standard-image="jakosc" alt="" /><span class="sr-only" data-i18n="standardQuality">Jakość</span></a></article>
+      <article class="standard-item"><a class="standard-link" href="standard.html?topic=ecology"><img src="assets/ekologiaPL.jpeg" data-standard-image="ekologia" alt="" /><span class="sr-only" data-i18n="standardEcology">Ekologia</span></a></article>
+      <article class="standard-item"><a class="standard-link" href="standard.html?topic=on-time"><img src="assets/terminowoPL.jpeg" data-standard-image="terminowo" alt="" /><span class="sr-only" data-i18n="standardOnTime">Terminowość</span></a></article>
+    </div>
+  </nav>
+  <main id="top">
+    <section class="career-section" id="kariera">
+      <div class="container">
+        <h1 data-i18n="careerTitle">Dołącz do zespołu STI</h1>
+        <p data-i18n="careerIntro">Wypełnij formularz i wyślij nam swoje CV. Odpowiemy w ciągu kilku dni.</p>
+
+        <form id="candidateForm" action="/api/candidates" method="POST" enctype="multipart/form-data" class="career-form">
+          <div class="form-group">
+            <label for="fullName" data-i18n="careerFullName">Imię i nazwisko *</label>
+            <input type="text" id="fullName" name="full_name" required placeholder="np. Jan Kowalski" data-i18n-placeholder="careerNamePlaceholder" />
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="careerEmail">Adres e-mail *</label>
+            <input type="email" id="email" name="email" required placeholder="np. jan.kowalski@interia.pl" data-i18n-placeholder="careerEmailPlaceholder" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone" data-i18n="careerPhone">Numer telefonu *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="np. +48 600 000 000" data-i18n-placeholder="careerPhonePlaceholder" />
+          </div>
+
+          <div class="form-group">
+            <label for="position" data-i18n="careerPosition">Stanowisko / Obszar *</label>
+            <select id="position" name="position" required>
+              <option value="" data-i18n="careerChoosePosition">Wybierz stanowisko...</option>
+              <option value="cleaning" data-i18n="careerCleaning">Serwis sprzątający</option>
+              <option value="technical" data-i18n="careerTechnical">Instalacje techniczne</option>
+              <option value="other" data-i18n="careerOther">Inne / Ogólne zgłoszenie</option>
+            </select>
+          </div>
+
+          <div class="form-group career-file-group">
+            <label for="cvFile" data-i18n="careerCv">Załącz plik CV (PDF lub DOCX, max 5 MB) *</label>
+            <input type="file" id="cvFile" name="cv_file" accept=".pdf,.doc,.docx" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary" data-i18n="careerSubmit">Wyślij aplikację</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer section-wrap">
+    <a class="footer-brand" href="index.html#top"><img src="assets/sti-logo.jpeg" alt="EVELORA" /></a>
+    <p data-i18n="footerClaim">Solidne wsparcie dla przemysłu. Odpowiedzialnie.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> EVELORA. <span data-i18n="rights">Wszelkie prawa zastrzeżone.</span></span><a href="index.html#top" data-i18n="backTop">Wróć na górę ↑</a><span>PL / DE / EN</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
