@@ -371,6 +371,9 @@ function renderStandard(language) {
   }
 }
 
+const savedTextSize = localStorage.getItem('sti-text-size');
+document.documentElement.classList.add('text-size-' + (['small', 'medium', 'large'].includes(savedTextSize) ? savedTextSize : 'medium'));
+
 renderStandard(getLanguage());
 languageSelect.addEventListener('change', event => {
   const language = event.target.value;
